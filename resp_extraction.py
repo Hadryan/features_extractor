@@ -91,13 +91,13 @@ def extract_feature_data(filenames_labels, audio_dir, long_extract):
     if not long_extract:
         print('Short extraction -- using first 10 entries only.')
         fe = FeaturesExtractor(filenames_labels.iloc[:10, :], audio_dir,
-                               do_gini_filter=False, resample_freq=16000)
+                               do_gini_filter=True, resample_freq=16000)
         fe.extract()
         save_pickle(fe.feature_data, 'short_demo_data')
         feature_data = fe.feature_data
     else:
         fe = FeaturesExtractor(filenames_labels, audio_dir,
-                               do_gini_filter=False, resample_freq=16000)
+                               do_gini_filter=True, resample_freq=16000)
         fe.extract()
         save_pickle(fe.feature_data, 'demo_data')
         feature_data = fe.feature_data
