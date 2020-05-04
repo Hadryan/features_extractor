@@ -4,6 +4,14 @@ FeatureExtractor class is located in the extractor.py file, and can be used inde
 project demo. The project demo requires a minimal home set up, please see the section at the bottom 
 of this readme.
 
+*** 
+    This code was ported from a Google Colab notebook, with some modification for offline use.
+    A copy of the notebook can be found in this repository: 
+    
+    respiratory_audio_sorting_notebook.ipynb
+***
+
+
 FeatureExtractor has the following dependencies. They may be installed with pip3 install:
 
 numpy
@@ -89,6 +97,8 @@ accompany it.  It is contained in the extractor.py file. Everything else is mean
 purposes, as part of a final project submission for MUMT 621, Music Information Retrieval at McGill 
 University, Montreal: Winter semester, 2020. The demonstration will need a .pickle file that cannot 
 be uploaded to Github due to size restrictions. Please contact the author if you are interested.
+
+feature_data.pickle must be placed in the project home directory.
 
 The accompanying scripts also assume the user has downloaded this respiratory database:
 https://www.kaggle.com/vbookshelf/respiratory-sound-database
